@@ -16,7 +16,7 @@ struct FourthView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("FourthView")
-            Button { model.path = ["second"] } label: { ButtonContent("Second View") }
+            Button { model.path += ["second"] } label: { ButtonContent("Second View") }
             Button { model.path = [] } label: { ButtonContent("Root View") }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

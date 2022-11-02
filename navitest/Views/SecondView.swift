@@ -16,8 +16,8 @@ struct SecondView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("SecondView")
-            Button { model.path += ["third"] } label: { ButtonContent("Third View") }
-            Button { model.path = [] } label: { ButtonContent("Root View") }
+            ButtonContent("Third View") { model.path += ["third"] }
+            ButtonContent("Root View") { model.path = [] }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.orange)

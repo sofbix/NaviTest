@@ -34,15 +34,14 @@ struct ContentView: View {
                 Text("Navigation stack")
                     .padding()
                 
-                Button { model.path = ["first"] } label: { ButtonContent("First View") }
-                Button { model.path = ["second"] } label: { ButtonContent("Second View") }
-                Button { model.path = ["third"] } label: { ButtonContent("Third View") }
-                Button { model.path = ["fourth"] } label: { ButtonContent("Fourth View") }
+                ButtonContent("First View") { model.path = ["first"] }
+                ButtonContent("Second View") { model.path = ["second"] }
+                ButtonContent("Third View") { model.path = ["third"] }
+                ButtonContent("Fourth View") { model.path = ["fourth"] }
                 
                 Spacer()
-                Button { model.path = ["first", "second", "third", "fourth"] }
-                         label: { ButtonContent("The furthest view") }
-                Button { model.path = [] } label: { ButtonContent("Root View") }
+                ButtonContent("The furthest view") { model.path = ["first", "second", "third", "fourth"] }
+                ButtonContent("Root View") { model.path = [] }
                 Spacer().frame(height: 32)
             }
             .navigationDestination(for: String.self) { destination in
@@ -60,10 +59,15 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 extension View {
-    func ButtonContent(_ title: String) -> some View {
-        Text(title)
-            .foregroundColor(.white)
-            .padding()
-            .background(Color.gray)
+    func ButtonContent(_ title: String, action:(()->Void)?) -> some View {
+        Button {
+            action?()
+        } label: {
+            Text(title)
+                .foregroundColor(.white)
+                .padding()
+        }
+        .background(Color.gray)
+        .clipShape(RoundedRectangle(cornerRadius: 5))
     }
 }

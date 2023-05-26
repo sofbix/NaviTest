@@ -16,7 +16,7 @@ struct FirstView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("FirstView")
-            ButtonContent("Second View") { model.path += ["second"] }
+            ButtonContent("Second View") { model.path += [.second(number: 11)] }
             ButtonContent("Root View") { model.path = [] }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

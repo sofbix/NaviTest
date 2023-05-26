@@ -9,6 +9,9 @@ import SwiftUI
 
 struct FourthView: View {
     @EnvironmentObject private var model: Coordinator
+
+    let nextScreenName: String?
+    let nextScreenPath: PathItem?
     
     var body: some View {
         VStack {
@@ -16,7 +19,9 @@ struct FourthView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("FourthView")
-            ButtonContent("Second View") { model.path += ["second"] }
+            if let nextScreenName, let nextScreenPath {
+                ButtonContent(nextScreenName) { model.path += [nextScreenPath] }
+            }
             ButtonContent("Root View") { model.path = [] }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -26,6 +31,6 @@ struct FourthView: View {
 
 struct FourthView_Previews: PreviewProvider {
     static var previews: some View {
-        FourthView()
+        FourthView(nextScreenName: "First", nextScreenPath: .first)
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SecondView: View {
     @EnvironmentObject private var model: Coordinator
+
+    let number: Int
     
     var body: some View {
         VStack {
@@ -16,7 +18,8 @@ struct SecondView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("SecondView")
-            ButtonContent("Third View") { model.path += ["third"] }
+            Text("number: \(number)")
+            ButtonContent("Third View") { model.path += [.third(string: "пусто")] }
             ButtonContent("Root View") { model.path = [] }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -26,6 +29,6 @@ struct SecondView: View {
 
 struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondView()
+        SecondView(number: 0)
     }
 }

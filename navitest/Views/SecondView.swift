@@ -19,8 +19,12 @@ struct SecondView: View {
                 .foregroundColor(.accentColor)
             Text("SecondView")
             Text("number: \(number)")
-            ButtonContent("Third View") { model.path += [.third(string: "пусто")] }
-            ButtonContent("Root View") { model.path = [] }
+            ButtonContent("Third View") {
+                model.path += [.third(string: "пусто")]
+            }
+            ButtonContent("Root View") {
+                model.path = []
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.orange)

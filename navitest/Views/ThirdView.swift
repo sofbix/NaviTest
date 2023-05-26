@@ -19,7 +19,9 @@ struct ThirdView: View {
                 .foregroundColor(.accentColor)
             Text("ThirdView")
             Text(string)
-            ButtonContent("Root View") { model.path = [] }
+            ButtonContent("Root View") {
+                model.path = []
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.green)

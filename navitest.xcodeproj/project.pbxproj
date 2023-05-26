@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2C1C6E672903EE5C0044C658 /* navitestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C6E662903EE5C0044C658 /* navitestApp.swift */; };
-		2C1C6E692903EE5C0044C658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C6E682903EE5C0044C658 /* ContentView.swift */; };
 		2C1C6E6B2903EE5E0044C658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C6E6A2903EE5E0044C658 /* Assets.xcassets */; };
 		2C1C6E6F2903EE5E0044C658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C6E6E2903EE5E0044C658 /* Preview Assets.xcassets */; };
 		2C1C6E7A2903F46B0044C658 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C6E792903F46B0044C658 /* ThirdView.swift */; };
 		2C1C6E7C2903F47E0044C658 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C6E7B2903F47E0044C658 /* FourthView.swift */; };
 		2C1C6E7E2903F4B00044C658 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C6E7D2903F4B00044C658 /* SecondView.swift */; };
 		2C1C6E802903F6860044C658 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C6E7F2903F6860044C658 /* FirstView.swift */; };
+		C344F3352A21550C0039DDA6 /* PathItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344F3342A21550C0039DDA6 /* PathItem.swift */; };
+		C344F3372A2155390039DDA6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344F3362A2155390039DDA6 /* Coordinator.swift */; };
+		C344F3392A2155960039DDA6 /* ButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344F3382A2155960039DDA6 /* ButtonContent.swift */; };
+		C344F33B2A2158810039DDA6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344F33A2A2158810039DDA6 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C1C6E632903EE5C0044C658 /* navitest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navitest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1C6E662903EE5C0044C658 /* navitestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navitestApp.swift; sourceTree = "<group>"; };
-		2C1C6E682903EE5C0044C658 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C1C6E6A2903EE5E0044C658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C1C6E6C2903EE5E0044C658 /* navitest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = navitest.entitlements; sourceTree = "<group>"; };
 		2C1C6E6E2903EE5E0044C658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -28,7 +30,11 @@
 		2C1C6E7B2903F47E0044C658 /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
 		2C1C6E7D2903F4B00044C658 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		2C1C6E7F2903F6860044C658 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		C3C46B872A212D1C004AA1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C344F3342A21550C0039DDA6 /* PathItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathItem.swift; sourceTree = "<group>"; };
+		C344F3362A2155390039DDA6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C344F3382A2155960039DDA6 /* ButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonContent.swift; sourceTree = "<group>"; };
+		C344F33A2A2158810039DDA6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C3C46B872A212D1C004AA1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,7 @@
 		2C1C6E652903EE5C0044C658 /* navitest */ = {
 			isa = PBXGroup;
 			children = (
-				C3C46B872A212D1C004AA1BA /* Info.plist */,
+				C344F3332A2154FF0039DDA6 /* Components */,
 				2C1C6E752903F3470044C658 /* Views */,
 				2C1C6E762903F3560044C658 /* Project */,
 				2C1C6E6D2903EE5E0044C658 /* Preview Content */,
@@ -80,7 +86,7 @@
 		2C1C6E752903F3470044C658 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2C1C6E682903EE5C0044C658 /* ContentView.swift */,
+				C344F33A2A2158810039DDA6 /* MainView.swift */,
 				2C1C6E7F2903F6860044C658 /* FirstView.swift */,
 				2C1C6E7D2903F4B00044C658 /* SecondView.swift */,
 				2C1C6E792903F46B0044C658 /* ThirdView.swift */,
@@ -92,11 +98,22 @@
 		2C1C6E762903F3560044C658 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				C3C46B872A212D1C004AA1BA /* Info.plist */,
 				2C1C6E662903EE5C0044C658 /* navitestApp.swift */,
 				2C1C6E6A2903EE5E0044C658 /* Assets.xcassets */,
 				2C1C6E6C2903EE5E0044C658 /* navitest.entitlements */,
 			);
 			path = Project;
+			sourceTree = "<group>";
+		};
+		C344F3332A2154FF0039DDA6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C344F3342A21550C0039DDA6 /* PathItem.swift */,
+				C344F3362A2155390039DDA6 /* Coordinator.swift */,
+				C344F3382A2155960039DDA6 /* ButtonContent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C344F3372A2155390039DDA6 /* Coordinator.swift in Sources */,
 				2C1C6E7A2903F46B0044C658 /* ThirdView.swift in Sources */,
+				C344F3352A21550C0039DDA6 /* PathItem.swift in Sources */,
+				C344F33B2A2158810039DDA6 /* MainView.swift in Sources */,
 				2C1C6E802903F6860044C658 /* FirstView.swift in Sources */,
 				2C1C6E7E2903F4B00044C658 /* SecondView.swift in Sources */,
-				2C1C6E692903EE5C0044C658 /* ContentView.swift in Sources */,
+				C344F3392A2155960039DDA6 /* ButtonContent.swift in Sources */,
 				2C1C6E672903EE5C0044C658 /* navitestApp.swift in Sources */,
 				2C1C6E7C2903F47E0044C658 /* FourthView.swift in Sources */,
 			);
@@ -307,7 +327,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = navitest/Info.plist;
+				INFOPLIST_FILE = navitest/Project/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -350,7 +370,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = navitest/Info.plist;
+				INFOPLIST_FILE = navitest/Project/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

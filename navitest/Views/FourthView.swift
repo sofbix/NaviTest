@@ -20,9 +20,13 @@ struct FourthView: View {
                 .foregroundColor(.accentColor)
             Text("FourthView")
             if let nextScreenName, let nextScreenPath {
-                ButtonContent(nextScreenName) { model.path += [nextScreenPath] }
+                ButtonContent(nextScreenName) {
+                    model.path += [nextScreenPath]
+                }
             }
-            ButtonContent("Root View") { model.path = [] }
+            ButtonContent("Root View") {
+                model.path = []
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.purple)

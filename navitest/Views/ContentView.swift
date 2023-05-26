@@ -26,7 +26,7 @@ class Coordinator: ObservableObject {
 
 
 struct ContentView: View {
-    @ObservedObject private var model = Coordinator()
+    @StateObject private var model = Coordinator()
     var body: some View {
    
         NavigationStack(path: $model.path) {

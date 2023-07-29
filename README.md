@@ -2,7 +2,7 @@
 
 Темма урока: "Как правильно организовать навигацию с помощью Deep Links и Universal Links в SwiftUI"
 
-Площадка: [https://otus.ru/lessons/advanced-ios/](Otus).
+Площадка: [Otus](https://otus.ru/lessons/advanced-ios/).
 
 Презентацию можно посмотреть [по ссылке](Presentation.pdf)
 
@@ -20,5 +20,5 @@ xcrun simctl openurl booted "navitest://domain/second/third/first/fourth?numberP
 
 ## Лицензия
 
-Новая редакция исходного кода (форк которой был сделан из исходников без лицензией) закрыта лицензией [LICENSE](MIT).
+Новая редакция исходного кода (форк которой был сделан из исходников без лицензией) закрыта [лицензией MIT](LICENSE).
 BxTextField is released under the MIT license. See LICENSE for details.

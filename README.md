@@ -17,3 +17,8 @@ xcrun simctl openurl booted "navitest://domain/second/third/first/fourth?numberP
 # Видеоматериал по уроку:
 
 [![Как правильно организовать навигацию с помощью Deep Links и Universal Links в SwiftUI](https://i.ytimg.com/vi/nxwsetTn9ec/maxresdefault.jpg?v=647095c9)](https://www.youtube.com/embed/nxwsetTn9ec "Как правильно организовать навигацию с помощью Deep Links и Universal Links в SwiftUI")
+
+## Лицензия
+
+Новая редакция исходного кода (форк которой был сделан из исходников без лицензией) закрыта лицензией [LICENSE](MIT).
+BxTextField is released under the MIT license. See LICENSE for details.
